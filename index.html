@@ -4,15 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>exercicio 2</title>
 </head>
 <body>
-    <form>
-            <p><label for="Data de nascimento_id">Data de nascimento:</label>
-          <input type="date" name="datetime" id="datetime id"></p>
-          <button type="submit" id="botão_id">
-              Enviar
-          </button>
-       </form>
+    <form action="http://ww.example.com/login.php"></form>
+    <p>Nome de usuário:
+        <input type="text" name="Nome de usuário" size="15" maxlength="30" placeholder="Digite seu nome" title="Importante">
+    </p>
+    
+    <p>Senha:
+        <input type="text" name="Senha" size="15" maxlength="30"> 
+    </p>
+    
+    <p><label for="CPF_id">CPF:</label>
+        <input type="text" name="número" id="CPF_id">  </p>
+    
+        <p><label for="Data de nascimento_id">Data de nascimento:</label>
+        <input type="date" name="datetime" id="datetime id"></p>
+    
+        <label for="Sexo_id">Sexo:</label>
+    <select name="Sexo" id="Sexo_id">
+    <option value="Fem">Feminino</option>
+    <option value="Mas">Masculino</option>
+</select>
+
+<label for="Estado civil_id">Estado civil:</label>
+<select name="Estado civil" id="Estado civil_id">
+<option value="Sol">Solteiro/a</option>
+<option value="Cas">Casado/a</option>
+<option value="Div">Divorciado/a</option>
+<option value="Viu">Viúvo/a</option>
+</select>
+
+<label for="Escolaridade_id">Escolaridade:</label>
+<select name="Escolaridade" id="Escolaridade_id">
+<option value="Fun">Fundamental Completo</option>
+<option value="Em">Ensino médio incompleto</option>
+<option value="Emc">Ensino médio completo</option>
+<option value="Sup">Ensino superior</option>
+<option value="Mes">Mestrado</option>
+<option value="Dou">Doutorado</option>
+</select>
+
+<fieldset id="personal">
+    <legend>Ocupação principal</legend>
+    <input type="radio" name="Op" id="Est">
+    <label for="Est">Estudo</label>
+    <input type="radio" name="Op" id="Tra">
+    <label for="Tra">Trabalho</label>
+    <input type="radio" name="Op" id="Et" checked> 
+    <label for="Et">Estudo e trabalho</label>
+</fieldset>
+
+<label for="Renda_id">Renda:</label>
+<select name="Renda" id="Renda_id">
+<option value="-1000">Menos de R$1000</option>
+<option value="A1000">Até R$1000</option>
+<option value="d1000 a 2000">De R$1000 até R$2000</option>
+<option value="d2000 a 5000">De R$2000 até R$5000 </option>
+<option value="d5000 a 10000">De R$5000 até R$10000</option>
+<option value="+10000">Mais de R$10000</option>
+</select>
+
+<p><label for="Dependentes_id">Dependentes:</label>
+    <input type="number" name="número" id="Dependentes_id">  </p>
+    <p><label for="telefone_id">telefone:</label>
+        <input type="text" name="telefone" id="telefone_id"></p>
+        <p><label for="Email_id">Email:</label>
+            <input type="text" name="Email" id="Email"></p>
+
+ <fieldset id="personal">
+     <legend>Localização</legend>
+    <label for="Estado_id">Estado:</label></br>
+    <select name="Estado" id="Estado_id">
+        <optgroup label="Sudeste">
+    <option value="SP">São Paulo</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="ES">Espiríto Santo</option>
+        </optgroup>
+        
+        <optgroup label="Sul">
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná </option>
+            <option value="RS">Rio Grande do Sul</option>
+                </optgroup> 
+
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                        </optgroup>
+
+                        <optgroup label="Centro-oeste">
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="DF">Destrito Federal</option>
+                            <option value="GO">Goiânia</option>
+                                </optgroup>
+
+                                <optgroup label="Norte">
+                                    <option value="AC">Acre</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="TO">Tocantins</option>
+                                        </optgroup>
+                                       </select>
+
+                                        <label for="Cidades_id">Cidades:</label>
+                                        <select name="Cidades" id="Cidades_id">
+                                        <option value="RB">Rio Branco</option>
+                                        <option value="MP">Macapá</option>
+                                        <option value="MN">Manaus</option>
+                                        <option value="BL">Belém</option>
+                                        <option value="PV">Porto Velho</option>
+                                        <option value="BV">Boa Vista</option>
+                                        <option value="PM">Palmas</option>
+                                        <option value="SL">São Luís</option>
+                                        <option value="TR">Teresina</option>
+                                        <option value="FT">Fortaleza</option>
+                                        <option value="NT">Natal</option>
+                                        <option value="JP">João Pessoa</option>
+                                        <option value="RF">Recife</option>
+                                        <option value="MC">Maceio</option>
+                                        <option value="AR">Aracaju</option>
+                                        <option value="SV">Salvador</option>
+                                        <option value="GN">Goiânia</option>
+                                        <option value="CB">Cuiaba</option>
+                                        <option value="CG">Campo Grande</option>
+                                        <option value="BS">Brasilia</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="BH">Belo Horizonte</option>
+                                        <option value="VT">Vitória</option>
+                                        <option value="CT">Curitiba</option>
+                                        <option value="FL">Florianopolis</option>
+                                        <option value="PA">Porto Alegre</option>
+                                        </select>
+                                    </fieldset>           
+                                    <P>
+                                        <INPUT type="reset"  name="b2" value="Limpar">
+                                        <INPUT type="submit" name="b1" value="Enviar">
+                                        <INPUT type="submit" name="b3" value="Upload">
+                                        </P>
+                                </form>
+
 </body>
 </html>
