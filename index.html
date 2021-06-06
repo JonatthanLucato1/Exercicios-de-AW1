@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio 1(A)</title>
+    <title>Ex 1(B)</title>
 </head>
 <body>
-    <form action="http://ww.example.com/login.php"></form>
-    <p>Nome de usuário:
-        <input type="text" name="Nome de usuário" size="15" maxlength="30">
-    </p>
-    <p>Senha:
-        <input type="text" name="Senha" size="15" maxlength="30"> 
-    </p>
-    <p>Algum comentário?</p>
-    <textarea name="comments" id="" cols="20" rows="4">Entre com o comentário...</textarea>
-    </form>
+  <form>
+      <fieldset id="personal">
+          <legend>Detalhe de contato</legend>
+          <p><label for="Email_id">Email:</label>
+        <input type="text" name="Email" id="Email"></p>
+        <p><label for="número_id">número:</label>
+       <input type="number" name="número" id="número_id"> </p>
+       <p><label for="telefone_id">telefone:</label>
+        <input type="number" name="telefone" id="telefone_id"></p>
+
+      </fieldset>
+  </form>  
 </body>
 </html>
